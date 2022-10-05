@@ -1,0 +1,483 @@
+/* Initial setup */
+
+:root {
+  --dark-one: #333;
+  --primary-one-color: #784cfb;
+  --secondary-one-color: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+button:focus {
+  outline: none;
+}
+
+header {
+  background-color: var(--primary-one-color);
+  color: #fff;
+}
+
+/* ------  GENRAL REUSABLE COMPONENTS STARTS ------  */
+.container {
+  max-width: 120rem;
+  padding: 0 3.6rem;
+  margin: 0 auto;
+}
+
+.header_nav {
+  width: 100%;
+  z-index: 50;
+  position: relative;
+}
+
+/* --- nav and stickly class at the same time --- */
+
+.header_container {
+  max-width: 135rem;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.header_nav-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9rem;
+}
+
+.header_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+.header_nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.header_nav-link {
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  margin-right: 4.5rem;
+  transition: all 0.3s;
+}
+
+.header_nav-list li:last-child a {
+  margin-right: 0rem;
+}
+
+.image-container {
+  padding: 2rem;
+}
+
+.imagePerson {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 4rem 2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 6rem;
+}
+
+.heading strong {
+  color: var(--primary-one-color);
+}
+
+.section_header {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+
+.section_title {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 1.4rem;
+  font-size: 4.2rem;
+  line-height: 1.4;
+  letter-spacing: 1.5px;
+}
+
+.section_title:after {
+  content: "";
+  position: absolute;
+  width: 12rem;
+  height: 5px;
+  border-radius: 3px;
+  background-color: var(--primary-one-color);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ------ ABOUT SECTION PART STARTS ------ */
+
+.grid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.about {
+  width: 100%;
+}
+
+.about .column-1 {
+  position: relative;
+}
+
+.about .column-2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about .column-1:before {
+  content: "About";
+  position: absolute;
+  font-size: 11rem;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+  color: var(--primary-one-color);
+  opacity: 0.1;
+  top: 15px;
+  left: 5px;
+  line-height: 0;
+}
+
+.about .section_body.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.about .column-2 {
+  position: relative;
+}
+
+.about img {
+  max-width: 100%;
+  margin-left: 4rem;
+}
+
+.about_title {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--dark-one);
+  letter-spacing: 2px;
+  margin-bottom: 3.2rem;
+}
+
+.about_text {
+  font-size: 1.8rem;
+  color: var(--dark-two);
+  letter-spacing: 1px;
+  line-height: 1.6;
+  word-wrap: break-word;
+  padding: 3.6rem 0;
+}
+
+.skills {
+  margin: 2rem 0 4rem 0;
+}
+
+.skill {
+  margin: 2rem 0;
+}
+
+.skill:last-child {
+  margin-bottom: 0;
+}
+
+.skill_title {
+  color: var(--dark-one);
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.skill i {
+  font-size: 3.6rem;
+  margin-right: 1rem;
+}
+
+.skill .HTML_icon {
+  color: #e34f26;
+}
+
+.skill .CSS3_icon {
+  color: #264de4;
+  margin-left: 1rem;
+}
+
+.skill .Javascript_icon {
+  color: #f7df1e;
+}
+
+.skill .React_icon {
+  color: #00d8ff;
+}
+
+.skill .GIT_icon {
+  color: #000;
+}
+
+/* project work */
+
+.project .container {
+  background-color: rgba(120, 76, 251, 0.2);
+  padding: 2rem 2rem;
+  margin-bottom: 4rem;
+  border-radius: 1rem;
+}
+
+.blog .container {
+  background-color: rgba(120, 76, 251, 0.2);
+  padding: 2rem 2rem;
+  margin-bottom: 4rem;
+  border-radius: 1rem;
+}
+
+.project-work,
+.blog-work {
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 5rem;
+}
+
+.project-work h4,
+.blog-work h4 {
+  font-size: 1.8rem;
+  color: var(--dark-two);
+  letter-spacing: 1px;
+  line-height: 1.6;
+  word-wrap: break-word;
+  padding: 2rem 6rem;
+  margin-bottom: 3rem;
+}
+
+.project-links {
+  font-size: 2rem;
+  padding: 1.2rem 2.4rem;
+  background-color: var(--primary-one-color);
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  margin: 4rem;
+  letter-spacing: 0.5px;
+}
+
+.blog-links {
+  font-size: 2rem;
+  padding: 1.2rem 2.4rem;
+  border: 1px solid var(--primary-one-color);
+
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--primary-one-color);
+  margin: 4rem;
+  letter-spacing: 0.5px;
+}
+
+/* project file css */
+
+.projects {
+  padding: 4rem 0 0 0;
+}
+
+.project-files {
+  text-align: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.project-list-items {
+  margin: 2rem;
+}
+
+.project-list-items li {
+  margin: 2rem;
+}
+.project-files h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.project-files p {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  line-height: 3rem;
+  padding: 1rem;
+}
+
+.project-files .link {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 2rem;
+  letter-spacing: 0.5px;
+}
+
+.btn_conatiner {
+  margin: 2rem;
+}
+
+.primary-link {
+  background-color: var(--primary-one-color);
+  color: #fff;
+}
+
+.secondary-link {
+  color: var(--primary-one-color);
+  border: 1px solid var(--primary-one-color);
+}
+
+/* ------ FOOTER SECTION PART STARTS ------ */
+
+.footer {
+  color: var(--secondary-one-color);
+  background-color: var(--dark-one);
+  padding: 5rem 0;
+}
+
+.footer_container {
+  max-width: 135rem;
+  margin: 0 auto;
+  padding: 0 3.6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.footer_title {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1.8px;
+  line-height: 1.6;
+}
+
+.footer_subTitle {
+  font-size: 1.8rem;
+  letter-spacing: 1.6px;
+  line-height: 1.6;
+}
+
+.footer_links {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.8rem;
+  letter-spacing: 1.2px;
+}
+
+.footer_link {
+  margin-right: 2.5rem;
+}
+
+.footer_links li:last-child a {
+  margin-right: 0;
+}
+
+.footer_link {
+  color: var(--secondary-one-color);
+  transition: all 0.3s;
+}
+
+.footer_link:hover {
+  color: var(--primary-one-color);
+}
+
+.footer_socials {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer_socials i {
+  color: var(--secondary-one-color);
+  font-size: 2.8rem;
+  transition: all 0.3s;
+  margin-right: 2.5rem;
+}
+
+.footer_socials a:last-child i {
+  margin-right: 2.5rem;
+}
+
+.footer_socials i:hover {
+  color: var(--primary-one-color);
+}
+
+.footer_end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.8rem;
+  margin: 3rem 0 1rem;
+  letter-spacing: 1.2px;
+  position: relative;
+}
+
+.footer_end p {
+  margin-right: 2rem;
+}
+
+.footer_end .heart_icon {
+  height: 45px;
+  width: 45px;
+}
+
+.footer_end .coffee_icon {
+  height: 50px;
+  width: 50px;
+  margin-right: 2rem;
+}
