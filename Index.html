@@ -11,7 +11,6 @@
     />
 
     <!-- Favicon on different device options -->
-
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -55,46 +54,50 @@
     <link href="/style.css" rel="stylesheet" type="text/css" />
     <!-- <link rel="stylesheet" href="/quries.css" type="text/css" /> -->
 
-    <script defer src="script.js"></script>
+    <!-- <script defer src="script.js"></script> -->
     <title>Ashok Patel</title>
   </head>
   <body>
-    <header class="header-container">
+    <header>
       <nav class="header_nav">
-        <div class="header_container header_nav-elements">
-          <p class="header_logo">Ashok Patel</p>
-
-          <ul class="header_nav-list">
-            <li><a class="header_nav-link" href="#section--0">Home</a></li>
-
-            <li><a class="header_nav-link" href="#section--2">Projects</a></li>
+        <div class="header_nav-elements flex-space-between">
+          <p>Ashok Patel</p>
+          <ul class="header_nav-list flex-align-center">
+            <li><a class="header_nav-link" href="#section--1">Home</a></li>
+            <li><a class="header_nav-link" href="#section--3">Projects</a></li>
             <li><a class="header_nav-link" href="#section--3">Blogs</a></li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="container">
-      <section class="image-container">
+
+    <main>
+      <section class="container hero grid" id="section--1">
+        <div class="hero_heading">
+          <h3 class="heading">
+            I am Ashok Patel,<br />
+            <strong> An aspiring Front-end developer</strong>
+          </h3>
+          <a href="#section--2">About me</a>
+        </div>
+
         <img
-          src="/Images/BackgroundImages/mainCover.gif"
-          class="imagePerson"
+          src="/Images/BackgroundImages/mainCoverTrans.png"
+          class="heroImage flex-center"
           alt="Image of person"
         />
-
-        <h3 class="heading">
-          I am Ashok Patel, <strong>An aspiring Front end developer</strong>
-        </h3>
       </section>
-      <section class="about section">
+
+      <section class="about section" id="section--2">
         <div class="container">
           <div class="section_header">
             <h3 class="section_title">About me</h3>
           </div>
 
-          <div class="section_body grid grid-2">
+          <div class="section_body grid">
             <div class="column-1">
-              <h3 class="about_title">Hello, I'm</h3>
-              <p class="about_text">
+              <h3 class="title">Hello, I'm</h3>
+              <p class="text">
                 A self-taught Javascript developer pursuing a career as a
                 front-end developer where I can apply my significant knowledge
                 of programming languages and development technologies. I'm
@@ -134,47 +137,51 @@
             </div>
 
             <div class="column-2">
-              <img
-                src="/Images/undraw_programming_re_kg9v.svg"
-                data-src="/Images/undraw_programming_re_kg9v.svg"
-                class="z-index lazy-img"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="project section">
-        <div class="container">
-          <div class="section_header">
-            <h3 class="section_title">Projects</h3>
-          </div>
-
-          <div class="section_body">
-            <div class="project-work">
-              <h4>
-                I like to showcase my work and thus, you can see my projects
-                hosted online
-              </h4>
-              <a href="./Project.html" class="project-links">See Projects</a>
+              <img src="/Images/BackgroundImages/aboutImg.png" alt="About Me" />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="blog section">
+      <section class="myWork section" id="section--3">
         <div class="container">
           <div class="section_header">
-            <h3 class="section_title">Blogs</h3>
+            <h3 class="section_title">My Work</h3>
           </div>
 
-          <div class="section_body">
-            <div class="blog-work">
-              <h4>
-                I like to showcase my work and thus, you can see my projects
-                hosted online
-              </h4>
-              <a href="./Project.html" class="blog-links">See Projects</a>
+          <div class="section_body grid">
+            <div class="project_wrapper">
+              <div class="project_image">
+                <img
+                  src="/Images/BackgroundImages/project.png"
+                  alt="Projects"
+                  width="150px"
+                />
+              </div>
+
+              <div class="project_work">
+                <h3 class="title">Projects</h3>
+                <p class="text">
+                  I like to showcase my work and thus, you can see my projects
+                  hosted online
+                </p>
+                <a href="#" class="project-links">See Projects</a>
+              </div>
+            </div>
+
+            <div class="blog_wrapper">
+              <div class="blog_image">
+                <img src="/Images/BackgroundImages/blog.png" alt="Blogs" />
+              </div>
+
+              <div class="blog-work">
+                <h3 class="title">Blogs</h3>
+                <p class="text">
+                  I am also working on some technical blogs. I like to document
+                  my journey of learning
+                </p>
+                <a href="#" class="blog-links">See Blogs</a>
+              </div>
             </div>
           </div>
         </div>
@@ -187,7 +194,7 @@
           <h2 class="footer_title">Ashok Patel</h2>
         </div>
 
-        <ul class="footer_links">
+        <ul class="footer_links flex-center">
           <li><a href="#" class="footer_link">Home</a></li>
 
           <li><a href="./Project.html" class="footer_link">Project</a></li>
@@ -205,7 +212,7 @@
         </div>
       </div>
 
-      <div class="footer_end">
+      <div class="footer_end flex-center">
         <p>Made with</p>
         <img
           class="coffee_icon"
