@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v3.0.1/css/line.css"
+    />
+
+    <!-- Favicon on different device options -->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/Images/Favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/Images/Favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/Images/Favicon/favicon-16x16.png"
+    />
+    <link
+      rel="anriod-chrome"
+      type="image/png"
+      href="/Images/Favicon/android-chrome-512x512.png"
+      sizes="512x512"
+    />
+    <link
+      rel="anriod-chrome"
+      type="image/png"
+      href="/Images/Favicon/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <link rel="manifest" href="/Images/Favicon/site.webmanifest" />
+
+    <!-- Google font link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="/style.css" rel="stylesheet" />
+    <link href="/blogsStyle.css" rel="stylesheet" />
+
+    <title>Ashok Patel</title>
+  </head>
+  <body>
+    <header>
+      <nav class="header_nav">
+        <div class="header_nav-elements flex-space-between">
+          <p>Ashok Patel</p>
+          <ul class="header_nav-list flex-align-center">
+            <li><a class="header_nav-link" href="/Index.html">Home</a></li>
+            <li>
+              <a class="header_nav-link" href="/Project.html">Projects</a>
+            </li>
+            <li><a class="header_nav-link" href="/Blogs.html">Blogs</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="blogs section">
+        <div class="container">
+          <div class="blog_image">
+            <img src="./Images/BackgroundImages/blog.png" alt="projects" />
+          </div>
+
+          <div class="section_header">
+            <h3 class="section_title">Blogs</h3>
+          </div>
+
+          <div class="section_body">
+            <div class="blogs_wrapper">
+              <div class="blog_wrap">
+                <div class="blog_card">
+                  <div class="blog_image-box">
+                    <img
+                      src="/Images/BlogImages/destructingImg.png"
+                      alt="Destructuring arrays and objects blog cover image"
+                      width="350px"
+                      height="250px"
+                      class="blog_image lazy-img"
+                    />
+                  </div>
+                  <div class="blog_content-box">
+                    <div class="blog_info flex-justify-space-between">
+                      <p class="blog_date">May, 2022</p>
+                      <p class="blog_user flex-center">
+                        <i class="uil uil-user-square"></i>ashok patel
+                      </p>
+                    </div>
+                    <h3 class="blog_title">Destructing arrays and objects</h3>
+                    <p class="blog_text">
+                      Destructuring is a Javascript ES6 feature it allows us to
+                      unpack values from a data structure like an array or an
+                      object into separate new variables.
+                    </p>
+                    <a href="#" class="btn btn_readMore">Read more</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="blog_wrap">
+                <div class="blog_card">
+                  <div class="blog_image-box">
+                    <img
+                      src="/Images/BlogImages/dataTypesImg.png"
+                      alt="Data Types blog cover images"
+                      class="blog_image lazy-img"
+                    />
+                  </div>
+                  <div class="blog_content-box">
+                    <div class="blog_info flex-justify-space-between">
+                      <p class="blog_date">May, 2022</p>
+                      <p class="blog_user flex-center">
+                        <i class="uil uil-user-square"></i>ashok patel
+                      </p>
+                    </div>
+                    <h3 class="blog_title">Data types memory management</h3>
+                    <p class="blog_text">
+                      The JavaScript engine has two components, the call stack
+                      and the memory heap, wherein the call stack, execution
+                      content is created for global variables and also separate
+                      execution content for each function.
+                    </p>
+                    <a href="#" class="btn btn_readMore">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_container">
+        <div class="footer_title-container">
+          <h2 class="footer_title">Ashok Patel</h2>
+        </div>
+
+        <ul class="footer_links flex-center">
+          <li><a href="#" class="footer_link">Home</a></li>
+
+          <li><a href="./Project.html" class="footer_link">Project</a></li>
+          <li><a href="./Blogs.html" class="footer_link">Blog</a></li>
+        </ul>
+
+        <div class="footer_socials">
+          <a href="#"><i class="uil uil-twitter"></i> </a>
+
+          <a href="#"><i class="uil uil-linkedin"></i> </a>
+
+          <a href="#"><i class="uil uil-github"></i> </a>
+
+          <a href="#"><i class="uil uil-google"></i> </a>
+        </div>
+      </div>
+
+      <div class="footer_end flex-center">
+        <p>Made with</p>
+        <img
+          class="coffee_icon"
+          src="/Images/FooterImages/coffeeImg.png"
+          alt=" coffee icon"
+        />
+        <p>and</p>
+        <img
+          class="heart_icon"
+          src="/Images/FooterImages/passionateImg.png"
+          alt=" heart icon"
+        />
+      </div>
+    </footer>
+  </body>
+</html>

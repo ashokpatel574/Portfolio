@@ -1,0 +1,74 @@
+.projects .section_body {
+  text-align: center;
+  max-width: 90rem;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.project_image {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.project_image img {
+  margin-top: -10rem;
+}
+
+.projects .section_header {
+  margin-top: -4rem;
+  margin-bottom: 5rem;
+}
+
+.project_card {
+  padding: 2.5rem 2rem;
+  margin-bottom: 5rem;
+  box-shadow: rgba(120, 76, 251, 0.3) 0px 1px 2px 0px,
+    rgba(120, 76, 251, 0.15) 0px 1px 3px 1px;
+  border-radius: 5px;
+}
+
+.project_list h1 {
+  font-size: 2.8rem;
+  padding-bottom: 1.5rem;
+}
+
+.project_list p {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  line-height: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+.project_list .link {
+  font-size: 2rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 0.75px;
+}
+
+.btn_container {
+  padding: 1.5rem 0;
+}
+
+.primary-link {
+  background-color: var(--primary-one-color);
+  color: #fff;
+  margin-right: 4rem;
+}
+
+.secondary-link {
+  color: var(--primary-one-color);
+  border: 1px solid var(--primary-one-color);
+}
+
+@media (max-width: 32em) {
+  .project_card {
+    text-align: left;
+  }
+
+  .primary-link {
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+}

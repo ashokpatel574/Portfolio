@@ -1,8 +1,6 @@
-/* Initial setup */
-
 :root {
   --dark-one: #333;
-  --primary-one-color: #784cfb;
+  --primary-one-color: rgb(120, 76, 251);
   --secondary-one-color: #fff;
 }
 
@@ -31,6 +29,7 @@ body {
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 ul {
@@ -345,61 +344,6 @@ header {
   color: var(--primary-one-color);
 }
 
-/* project file css */
-
-/* .projects {
-  padding: 4rem 0 0 0;
-}
-
-.project-files {
-  text-align: center;
-  max-width: 80rem;
-  margin: 0 auto;
-  min-height: 100vh;
-}
-
-.project-list-items {
-  margin: 2rem;
-}
-
-.project-list-items li {
-  margin: 2rem;
-}
-.project-files h1 {
-  font-size: 2.8rem;
-  margin-bottom: 1rem;
-}
-
-.project-files p {
-  font-size: 1.8rem;
-  letter-spacing: 1px;
-  line-height: 3rem;
-  padding: 1rem;
-}
-
-.project-files .link {
-  font-size: 2rem;
-  padding: 1rem 2rem;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 2rem;
-  letter-spacing: 0.5px;
-}
-
-.btn_conatiner {
-  margin: 2rem;
-}
-
-.primary-link {
-  background-color: var(--primary-one-color);
-  color: #fff;
-}
-
-.secondary-link {
-  color: var(--primary-one-color);
-  border: 1px solid var(--primary-one-color);
-} */
-
 /* ------ FOOTER SECTION PART STARTS ------ */
 
 .footer {
@@ -487,6 +431,10 @@ header {
 @media (max-width: 60em) {
   /*-------  HERO SECTION  ------*/
 
+  .container {
+    padding: 0 2rem;
+  }
+
   .hero {
     display: flex;
     flex-direction: column-reverse;
@@ -516,7 +464,7 @@ header {
   .about .section_body {
     display: flex;
     flex-direction: column-reverse;
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
   .about .column-2 {
@@ -621,6 +569,14 @@ header {
 
   .about .column-1:before {
     font-size: 9rem;
+  }
+
+  .about .section_body {
+    padding: 0;
+  }
+
+  .about .text {
+    padding-right: 0rem;
   }
 
   /* ------ FOOTER SECTION PART STARTS ------ */
