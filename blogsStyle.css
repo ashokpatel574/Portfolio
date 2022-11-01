@@ -22,7 +22,6 @@
 .blogs_wrapper {
   display: flex;
   width: 100%;
-  height: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 2rem 0;
@@ -36,9 +35,9 @@
 .blog_card {
   max-width: 40rem;
   width: 100%;
-  height: 100%;
   transition: all 0.3s;
   position: relative;
+  overflow: hidden;
 }
 
 .blog_image-box {
@@ -148,10 +147,32 @@
   .blogs_wrapper {
     justify-content: center;
   }
+
+  .blog_wrap {
+    margin: 2rem 0rem;
+  }
+
+  .blog_content-box {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 26em) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .blogs_wrapper {
+    height: 150rem;
+  }
+
+  .blog_wrap:nth-child(2) .blog_content-box {
+    height: 42rem;
+  }
 }
 
 @media (max-width: 22em) {
-  .blogs_wrapper {
-    height: 150rem;
+  .blog_wrap:nth-child(2) .blog_content-box {
+    height: 46rem;
   }
 }

@@ -610,6 +610,9 @@ header {
 }
 
 @media (max-width: 34em) {
+  .section:last-child {
+    padding-bottom: 0rem;
+  }
   .header_nav-elements {
     justify-content: center;
   }
