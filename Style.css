@@ -136,7 +136,7 @@ header {
 }
 
 .header_nav-elements {
-  height: 10rem;
+  height: 11rem;
   flex-wrap: wrap;
 }
 
@@ -580,12 +580,32 @@ header {
 
   /* ------ FOOTER SECTION PART STARTS ------ */
 
-  .footer_socials i {
-    margin-right: 2.5rem;
+  .footer_container {
+    padding: 0 2rem;
   }
 
-  .footer_socials a:last-child i {
-    margin-right: 1.5rem;
+  .footer_title {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  .footer_links,
+  .footer_end {
+    font-size: 1.4rem;
+  }
+
+  .footer_socials i {
+    font-size: 2.4rem;
+  }
+
+  .footer_end .heart_icon {
+    height: 30px;
+    width: 30px;
+  }
+
+  .footer_end .coffee_icon {
+    height: 40px;
+    width: 40px;
   }
 }
 
