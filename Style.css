@@ -138,6 +138,7 @@ header {
 .header_nav-elements {
   height: 11rem;
   flex-wrap: wrap;
+  z-index: 50;
 }
 
 .header_nav-elements p {
