@@ -171,8 +171,20 @@
   }
 }
 
-@media (max-width: 22em) {
+@media (max-width: 23em) {
   .blog_wrap:nth-child(2) .blog_content-box {
     height: 46rem;
+  }
+}
+
+@media (max-width: 18em) {
+  .blogs_wrapper {
+    height: 160rem;
+  }
+  .blog_wrap:nth-child(1) .blog_content-box {
+    height: 46rem;
+  }
+  .blog_wrap:nth-child(2) .blog_content-box {
+    height: 55rem;
   }
 }
