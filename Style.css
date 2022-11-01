@@ -199,7 +199,7 @@ header {
 
 .hero_heading a {
   font-size: 2rem;
-  padding: 1.2rem 2.4rem;
+  padding: 0.9rem 1.8rem;
   border-radius: 5px;
   cursor: pointer;
   letter-spacing: 1px;
@@ -328,7 +328,7 @@ header {
 .project-links,
 .blog-links {
   font-size: 2rem;
-  padding: 1.2rem 2.4rem;
+  padding: 0.8rem 1.6rem;
   border-radius: 5px;
   cursor: pointer;
   letter-spacing: 0.5px;
@@ -512,12 +512,11 @@ header {
   }
 
   .footer_end {
-    margin: 0 0 1rem;
+    margin: 2rem 0 1rem;
   }
 }
 
 @media (max-width: 42em) {
-  /* ------  GENRAL REUSABLE COMPONENTS ------  */
   .container {
     padding: 0 2rem;
   }
@@ -580,4 +579,26 @@ header {
   }
 
   /* ------ FOOTER SECTION PART STARTS ------ */
+
+  .footer_socials i {
+    margin-right: 2.5rem;
+  }
+
+  .footer_socials a:last-child i {
+    margin-right: 1.5rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .header_nav-elements {
+    justify-content: center;
+  }
+
+  .footer_socials i {
+    margin-right: 2rem;
+  }
+
+  .footer_socials a:last-child i {
+    margin-right: 1rem;
+  }
 }
